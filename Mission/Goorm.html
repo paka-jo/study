@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goorm mission</title>
+    <script
+      src="https://kit.fontawesome.com/045ee8b551.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    * {
+      padding: 0%;
+      margin: 0%;
+      text-decoration: none;
+      list-style: none;
+    }
+    /* frist */
+    nav.top {
+      background-color: #3abe36;
+      width: 100%;
+      height: 80px;
+    }
+    nav.top li {
+      display: inline-block;
+      margin: 0 8px;
+      line-height: 80px;
+    }
+    nav.top a {
+      color: rgb(214, 212, 212);
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+    a.active,
+    a:hover {
+      color: rgb(255, 255, 255);
+      border: solid white;
+    }
+    /* second */
+    nav.second {
+      background-color: rgb(192, 182, 182);
+      width: 100%;
+      height: 30px;
+    }
+    nav.second li {
+      display: inline-block;
+      margin: 0 4px;
+      height: 60px;
+      width: 80px;
+    }
+    nav.second a {
+      color: black;
+      font-size: 14px;
+      font-weight: 1000;
+      text-transform: uppercase;
+      padding: 2px;
+    }
+    ul {
+      list-style: none;
+    }
+
+    li.dictionary {
+      float: left;
+    }
+    .search-box {
+      height: 30px;
+      width: 300px;
+      background: white;
+      position: relative;
+      left: 15%;
+      top: 15%;
+      border-radius: 40px;
+      padding: 10px;
+      border: 1px solid #353334;
+    }
+    .search-txt {
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0px;
+      color: #797979;
+      font-size: 16px;
+      line-height: 30px;
+      width: 200px;
+    }
+
+    .search-btn {
+      color: #3b3739;
+      float: right;
+      width: 40px;
+      height: 100%;
+      border-radius: 50%;
+      background: white;
+      border: none;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h2 {
+      position: relative;
+      left: 16%;
+      top: 14%;
+
+    }
+    div.dictionary {
+      
+      
+      width: 100%;
+      height: 250px;
+      border: 1px solid #919191;
+    }
+    div.left {
+      width: 50%;
+      height: 250px;
+      float: left;
+      box-sizing: border-box;
+      
+      background-color: #eceaea;
+    }
+    div.right {
+      width: 50%;
+      height: 250px;
+      float: right;
+      box-sizing: border-box;
+      background-color: #e0e0e0;
+    }
+    .go {
+      background-color: #797979;
+    }
+    .under{
+      width: 100%;
+      display: inline-flex;
+      border: 5px  ;
+      text-align: center;
+      line-height: 200%;
+      background-color: #ccc9c9;
+      
+      
+    }
+    
+    .a {
+      flex: 1;
+      width: 33%;
+    }
+    .b {
+      flex: 1;
+      width: 33%;
+      
+    }
+    .c {
+      flex: 1;
+      width: 33%;
+    }
+    
+  </style>
+  <body>
+    <nav class="top">
+      <li><a href="https://dict.naver.com/" class="active">사전</a></li>
+      <li><a href="https://papago.naver.com/">파파고</a></li>
+      <li>
+        <a href="https://open-pro.dict.naver.com/_ivo/home">오픈사전pro</a>
+      </li>
+      <li><a href="https://dict.naver.com/userstranslate/">참여번역</a></li>
+      <li><a href="https://terms.naver.com/">참여번역</a></li>
+    </nav>
+    <nav class="second">
+      <li><a href="http://127.0.0.1:5500/practice/Goorm.html">사전홈</a></li>
+      <li><a href="https://en.dict.naver.com/#/main">영어</a></li>
+      <li><a href="https://ko.dict.naver.com/#/main">국어</a></li>
+      <li><a href="https://hanja.dict.naver.com/#/main">한자</a></li>
+      <li><a href="https://ja.dict.naver.com/#/main">일본어</a></li>
+      <li><a href="https://zh.dict.naver.com/#/main">중국어</a></li>
+      <li><a href="https://dict.naver.com/frkodict/#/main">프랑스어</a></li>
+      <li><a href="https://dict.naver.com/eskodict/#/main">스페인어</a></li>
+      <li><a href="https://dict.naver.com/dekodict/#/main">독일어</a></li>
+      <li>
+        <a href="https://english.dict.naver.com/english-dictionary/#/main"></a>
+      </li>
+    </nav>
+    <div class="dictionary">
+      <div class="left">
+      <h2>어학사전</h2>
+      <form class="search-box" action="" method="get">
+        <input
+          class="search-txt"
+          type="text"
+          name=""
+          placeholder="검색어를 입력하세요"
+        />
+        <button class="search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      </form>
+      <div class="right">
+        <h2>지식사전</h2>
+        <form class="search-box" action="" method="get">
+          <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="검색어를 입력하세요"
+          />
+          <button class="search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <h4 class="go">어학사전&단어장 바로가기</h4>
+        <div class="under">
+          
+          <div class="a">
+            <h4>인기</h4>
+          <ul>
+            
+            <li>영어</li>
+            <li>영영</li>
+            <li>국어</li>
+            <li>한자</li>
+            <li>일본어</li>
+            <li>중국어</li>
+            <li>프랑스어</li>
+            <li>스페인어</li>
+            <li>독인어</li>
+            <li>베트남어</li>
+          </ul>
+        </div>
+          <div class="b">
+            <h4>아시아/아프리카</h4>
+          <ul>
+            
+            <li>네팔어</li>
+            <li>라오어</li>
+            <li>몽골어</li>
+            <li>미얀마어</li>
+            <li>스오힐리어</li>
+            <li>아랍어</li>
+            <li>우르두어</li>
+            <li>우즈베크어</li>
+            <li>인도네이사어</li>
+            <li>캄보디아어</li>
+          </ul>
+        </div>
+        <div class="c">
+          <h4>유럽/아메리카</h4>
+          <ul>
+            
+            <li>그리스어(현대)</li>
+            <li>그리스어(고대)</li>
+            <li>네덜란드어</li>
+            <li>노르웨이어</li>
+            <li>덴마크어</li>
+            <li>라틴어</li>
+            <li>러시아어</li>
+            <li>루마니아어</li>
+            <li>스웨덴어</li>
+            <li>알바니아어</li>
+          </ul>
+
+        </div>
+    </div>
+
+  </body>
+</html>
